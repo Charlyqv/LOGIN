@@ -1,0 +1,46 @@
+.toggle-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  z-index: 1; /* Asegúrate de que esté por encima */
+  /* padding: 10px; */
+  /* background-color: lightblue; */
+  background: linear-gradient(135deg, #ff8e97, #ff0019);
+  cursor: pointer;
+  width: 768px;
+  max-width: 50%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border-top-left-radius: 45%;
+  border-bottom-left-radius: 30%; */
+  /* border-top-right-radius: 45%;
+  border-bottom-right-radius: 30%; */
+}
+
+.toggle-container.toggled {
+  transform: translateX(-100%); /* Mueve el toggle de derecha a izquierda */
+}
+
+.toggle-container h1{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -35px;
+}
+
+.toggle-container label{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.toggle-container button{  
+  background: transparent;
+  border: 1px solid white;
+}
